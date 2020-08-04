@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="click">
+    <img src="img/webwxgetmsgimg.jpg" alt="">
+  </div>
+  <div class="show" style="display: none;">
+    <img src="img/webwxgetmsgimg (1).jpg" alt="">
+    <img src="img/webwxgetmsgimg (2).jpg" alt="">
+    <img src="img/webwxgetmsgimg (3).jpg" alt="">
+    <img src="img/webwxgetmsgimg (4).jpg" alt="">
+    <img src="img/webwxgetmsgimg (5).jpg" alt="">
+  </div>
+  <script>
+    var show = document.getElementsByClassName('show')[0]
+    document.getElementsByClassName('click')[0].onclick = function(){
+      show.style.display = 'block'
+    }
+  </script>
+</body>
+</html>
